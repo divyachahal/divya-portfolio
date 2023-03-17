@@ -3,12 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "NPM_FLAGS": "npm install --force",
-  "NODE_ENV": "production",
   "scripts": {
     "dev": "vite",
     "build": "vite build --force",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "NODE_ENV": "production"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
