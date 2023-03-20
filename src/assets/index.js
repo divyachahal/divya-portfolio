@@ -21,14 +21,20 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import meta from "./company/NIC.jpeg";
+import shopify from "./company/acc.png";
+import starbucks from "./company/SAP.png";
+import tesla from "./company/acc.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import coursera from "./cor.png";
+import microsoft from "./mic.png";
+import azure from "./azure.png";
+import google from "./google.png";
+import meta1 from "./meta.png";
 
 export {
   logo,
@@ -59,4 +65,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  coursera,
+  microsoft,
+  azure,
+  google,
+  meta1
 };

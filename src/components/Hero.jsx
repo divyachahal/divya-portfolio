@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+
+// Import icons from assets folder
+import linkedinIcon from "../assets/linkedin.png";
+import githubIcon from "../assets/github.png";
+import twitterIcon from "../assets/twitter.png";
 
 const Hero = () => {
   return (
@@ -16,18 +20,31 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Divya</span>
+            Hi, I'm <span className='text-[#915EFF]'>Divya Chahal</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+            I'm a skilled software engineer with 3+ years of experience in both software development & data engineering, <br className='sm:block hidden' />
+            and passionate about creating scalable and efficient software solutions that cater to end users' needs.
           </p>
+          
+          {/* Add clickable icons with links */}
+          <div className="mt-4 flex gap-4">
+            <a href="https://www.linkedin.com/in/divyachahal/">
+              <img src={linkedinIcon} alt="LinkedIn Icon" width="32" height="32" />
+            </a>
+            <a href="https://github.com/divyachahal">
+              <img src={githubIcon} alt="GitHub Icon" width="32" height="32" />
+            </a>
+            <a href="https://twitter.com/BeDataEngineer">
+              <img src={twitterIcon} alt="Twitter Icon" width="32" height="32" />
+            </a>
+          </div>
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+      {/* <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
@@ -43,7 +60,7 @@ const Hero = () => {
             />
           </div>
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };
